@@ -1,5 +1,6 @@
 backend:
-  name: test
+  name: github
+  repo: FlorianMerkle/peak-moment
 media_folder: static/assets
 public_folder: /assets
 collections:
