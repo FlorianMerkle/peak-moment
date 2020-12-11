@@ -4,23 +4,30 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-
-  - name: seo
-    label: SEO
-    files: 
-      - name: general
-        label: General
-        file: content/seo.json
-        fields:
-        - { name: title, label: Title, widget: text }
-        - { name: description, label: Description, widget: text }
-        - { name: keywords, label: Keywords, widget: text }
   - name: settings
     label: Settings
-    files: 
-      - name: general
-        label: General
-        file: content/settings.json
+    files:
+      - name: settings
+        label: Settings
+        file: content/general_settings.json
         fields:
-        - { name: title, label: Title, widget: hidden }
-        - { name: email, label: Email, widget: text }
+          - { name: title, label: Title}
+          - { name: insta_link, label: Instagram Link, widget: string }
+          - { name: fb_link, label: Facebook Link, widget: string }
+          - { name: linkedin_link, label: LinkedIn Link, widget: string }
+          - { name: contact_mail, label: Contact Mail, widget: string }
+  - name: Experiences
+    label: Experiences
+    files:
+      - name: Experiences
+        label: Experiences
+        file: content/en_experiences.json
+        fields:
+          - { name: title, label: Title, widget: hidden}
+          widget: list
+          fields:
+            - { name: title, label: Title }
+            - { name: visual, label: Visual, widget: image }
+            - { name: alt_text, label: Alternative Text, widget: string }
+            - { name: link, label: Link, widget: string }
+        
