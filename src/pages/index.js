@@ -19,7 +19,28 @@ const IndexPage = () => {
           <img></img>
         </div>        
       </div>
-      <div style={{width:'100%', height:'80vh', backgroundColor:'darkgrey', color:'white'}}>
+      <div style={{width:'100%', height:'100vh', backgroundColor:'darkgrey', color:'white', display:'flex', flexDirection:'column'}}>
+        <div style={{flex:1, flexDirection:'row', display:'flex'}}>
+          <div style={{backgroundColor:'green', flex:2}}></div>
+          <div style={{backgroundColor:'blue', flex:3}}></div>
+          <div style={{backgroundColor:'yellow', flex:3}}></div>
+          
+
+          
+
+        </div>
+        <div style={{flex:1, flexDirection:'row', display:'flex'}}>
+          <div style={{backgroundColor:'black', flex:5}}></div>
+          <div style={{backgroundColor:'orange', flex:3}}></div>
+          <div style={{backgroundColor:'red', flex:3}}></div>
+          
+        </div>
+        <div style={{flex:1, flexDirection:'row', display:'flex'}}>
+          <div style={{backgroundColor:'violete', flex:2}}></div>
+          <div style={{backgroundColor:'darkblue', flex:3}}></div>
+          <div style={{backgroundColor:'gold', flex:3}}></div>
+          
+        </div>
 
       </div>
       <div style={{width:'100%', height:'300px', backgroundColor:'black', color:'white'}}>
