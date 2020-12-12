@@ -22,18 +22,18 @@
       "flex": 3
     },
     {
-      "title": "LEGO Inside Tour",
-      "visual": "/assets/lego-inside-tour.jpg",
-      "link": "https://legohouse.com/de-de/das-ist-los/lego-inside-tour/",
-      "alt_text": "Seht, wie die LEGO® Steine hergestellt werden, trefft die Designer und lasst euch durch die einzigartige LEGO Geschichte in Ole Kirks einstigem Haus führen.",
-      "flex": 2
-    },
-    {
       "title": "Salomon 4 Trails",
       "visual": "/assets/salomon-4-trails.jpg",
       "link": "https://4trails.net/anmeldung/",
       "alt_text": "Wachsen Sie über sich hinaus und werden Sie Teil der Salomon 4 Trails Series.",
       "flex": 3
+    },
+    {
+      "title": "LEGO Inside Tour",
+      "visual": "/assets/lego-inside-tour.jpg",
+      "link": "https://legohouse.com/de-de/das-ist-los/lego-inside-tour/",
+      "alt_text": "Seht, wie die LEGO® Steine hergestellt werden, trefft die Designer und lasst euch durch die einzigartige LEGO Geschichte in Ole Kirks einstigem Haus führen.",
+      "flex": 2
     },
     {
       "title": "Trip Planning From Sofa",
