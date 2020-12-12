@@ -29,17 +29,17 @@
       "flex": 3
     },
     {
-      "title": "LEGO Inside Tour",
-      "visual": "/assets/lego-inside-tour.jpg",
-      "link": "https://legohouse.com/de-de/das-ist-los/lego-inside-tour/",
-      "alt_text": "Seht, wie die LEGO® Steine hergestellt werden, trefft die Designer und lasst euch durch die einzigartige LEGO Geschichte in Ole Kirks einstigem Haus führen.",
-      "flex": 2
-    },
-    {
       "title": "Trip Planning From Sofa",
       "visual": "/assets/trip-planning-from-sofa.jpg",
       "link": "https://community-events.arcteryx.com/tripplanningwithwalterzoerer",
       "alt_text": "Mach das Beste aus deiner Zeit zu Hause und bereite deinen nächsten Trip vor.",
+      "flex": 2
+    },
+    {
+      "title": "LEGO Inside Tour",
+      "visual": "/assets/lego-inside-tour.jpg",
+      "link": "https://legohouse.com/de-de/das-ist-los/lego-inside-tour/",
+      "alt_text": "Seht, wie die LEGO® Steine hergestellt werden, trefft die Designer und lasst euch durch die einzigartige LEGO Geschichte in Ole Kirks einstigem Haus führen.",
       "flex": 2
     },
     {
