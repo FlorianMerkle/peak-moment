@@ -1,38 +1,17 @@
 {
   "experience": [
     {
-      "title": "BMW M Race Track Compact Drive",
-      "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
-      "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
-      "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
-      "flex": 3
-    },
-    {
-      "title": "BMW M Race Track Compact Drive",
-      "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
-      "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
-      "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
+      "title": "Dinner For You",
+      "visual": "/assets/dinner-for-you.jpg",
+      "link": "https://www.kitchennerds.de/privatkoch/ulrich-beier/322/gerichte/9a4a02a3-822c-48a3-af83-5d00b6f4730d/1/",
+      "alt_text": "Rent-a-Cook. Holen Sie sich für Ihren ganz besonderen Abend den Koch einfach zu Ihnen nach Hause.",
       "flex": 2
     },
     {
-      "title": "BMW M Race Track Compact Drive",
-      "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
-      "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
-      "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
-      "flex": 2
-    },
-    {
-      "title": "BMW M Race Track Compact Drive",
-      "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
-      "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
-      "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
-      "flex": 1
-    },
-    {
-      "title": "BMW M Race Track Compact Drive",
-      "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
-      "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
-      "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
+      "title": "Swarovski Erlebnis Kristall Paket",
+      "visual": "/assets/swarovski-erlebnis-kristall-paket.jpg",
+      "link": "https://kristallwelten.swarovski.com/Content.Node/wattens/Erlebnis_Kristall_Pakete.html",
+      "alt_text": "Tauchen Sie ein, in die einzigartige Welt von Swarovski. ",
       "flex": 2
     },
     {
@@ -43,17 +22,45 @@
       "flex": 3
     },
     {
-      "title": "BMW M Race Track Compact Drive",
-      "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
-      "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
-      "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
-      "flex": 1
+      "title": "Salomon 4 Trails",
+      "visual": "/assets/salomon-4-trails.jpg",
+      "link": "https://4trails.net/anmeldung/",
+      "alt_text": "Wachsen Sie über sich hinaus und werden Sie Teil der Salomon 4 Trails Series.",
+      "flex": 3
     },
     {
-      "title": "BMW M Race Track Compact Drive",
-      "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
-      "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
-      "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
+      "title": "Trip Planning From Sofa",
+      "visual": "/assets/trip-planning-from-sofa.jpg",
+      "link": "https://community-events.arcteryx.com/tripplanningwithwalterzoerer",
+      "alt_text": "Mach das Beste aus deiner Zeit zu Hause und bereite deinen nächsten Trip vor.",
+      "flex": 2
+    },
+    {
+      "title": "LEGO Inside Tour",
+      "visual": "/assets/lego-inside-tour.jpg",
+      "link": "https://legohouse.com/de-de/das-ist-los/lego-inside-tour/",
+      "alt_text": "Seht, wie die LEGO® Steine hergestellt werden, trefft die Designer und lasst euch durch die einzigartige LEGO Geschichte in Ole Kirks einstigem Haus führen.",
+      "flex": 2
+    },
+    {
+      "title": "Arena VIP Tour",
+      "visual": "/assets/arena-vip-tour.jpg",
+      "link": "https://allianz-arena.com/de/touren-und-fc-bayern-museum/arena-touren/vip-tour",
+      "alt_text": "Erleben Sie die Atmosphäre der Allianz Arena exklusiv aus der Sicht der Mannschaft oder eines VIP-Gastes!",
+      "flex": 2
+    },
+    {
+      "title": "Your Perfect Skiday",
+      "visual": "/assets/your-perfect-skiday.jpg",
+      "link": "http://www.salomonstation.at/perfect-skiday/",
+      "alt_text": "Ob mit Technikübungen für Anfänger oder schon echten Carving- und Freerideschwüngen für Fortgeschrittene, macht der ehemalige Weltcupsieger Berni Gstrein Ihren Skitag in Sölden zu einem sicherlich unvergesslichen Erlebnis!",
+      "flex": 2
+    },
+    {
+      "title": "5K Reboosted ClassicRUN",
+      "visual": "/assets/5k-rebosted-classicrun.jpg",
+      "link": "https://www.adidas.de/adidasrunners/community/frankfurt/event/5k-reboosted-classicrun-4?cm_sp=RUNNING_HUB-_-FRANKFURT-_-5K-REBOOSTED-CLASSICRUN-4",
+      "alt_text": "Wir wollen die Routine unseres Classicruns beibehalten und euch noch dazu für die \"5k Districtchallenge Reboosted motivieren.",
       "flex": 3
     },
     {
@@ -62,13 +69,6 @@
       "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
       "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
       "flex": 2
-    },
-    {
-      "title": "BMW M Race Track Compact Drive",
-      "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
-      "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
-      "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
-      "flex": 3
     }
   ]
 }
