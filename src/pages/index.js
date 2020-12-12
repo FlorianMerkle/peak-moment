@@ -15,7 +15,7 @@ const pageStyles = {
 const Tile = props => {
   const {title, flex, visual, altText, link} = props
   return (
-    <div style={{backgroundColor: color,  display: flex}}>
+    <div style={{ display: flex}}>
       <a href={link}>
         <img src={visual} alt={altText} style={{height:'100%', width:'100%', objectFit:'cover'}}/>
       </a>
