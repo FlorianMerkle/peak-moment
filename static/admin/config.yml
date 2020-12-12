@@ -12,6 +12,7 @@ collections:
         file: content/general_settings.json
         fields:
         - { name: title, label: Title}
+        - { name: logo, label: Logo, widget: image }
         - { name: insta_link, label: Instagram Link, widget: string }
         - { name: fb_link, label: Facebook Link, widget: string }
         - { name: linkedin_link, label: LinkedIn Link, widget: string }
