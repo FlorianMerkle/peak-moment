@@ -5,7 +5,7 @@
       "visual": "/assets/dinner-for-you.jpg",
       "link": "https://www.kitchennerds.de/privatkoch/ulrich-beier/322/gerichte/9a4a02a3-822c-48a3-af83-5d00b6f4730d/1/",
       "alt_text": "Rent-a-Cook. Holen Sie sich für Ihren ganz besonderen Abend den Koch einfach zu Ihnen nach Hause.",
-      "flex": 2
+      "flex": 1
     },
     {
       "title": "Swarovski Erlebnis Kristall Paket",
@@ -15,18 +15,18 @@
       "flex": 2
     },
     {
-      "title": "LEGO Inside Tour",
-      "visual": "/assets/lego-inside-tour.jpg",
-      "link": "https://legohouse.com/de-de/das-ist-los/lego-inside-tour/",
-      "alt_text": "Seht, wie die LEGO® Steine hergestellt werden, trefft die Designer und lasst euch durch die einzigartige LEGO Geschichte in Ole Kirks einstigem Haus führen.",
-      "flex": 1
-    },
-    {
       "title": "BMW M Race Track Compact Drive",
       "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
       "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
       "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
       "flex": 3
+    },
+    {
+      "title": "LEGO Inside Tour",
+      "visual": "/assets/lego-inside-tour.jpg",
+      "link": "https://legohouse.com/de-de/das-ist-los/lego-inside-tour/",
+      "alt_text": "Seht, wie die LEGO® Steine hergestellt werden, trefft die Designer und lasst euch durch die einzigartige LEGO Geschichte in Ole Kirks einstigem Haus führen.",
+      "flex": 4
     },
     {
       "title": "BMW M Race Track Compact Drive",
