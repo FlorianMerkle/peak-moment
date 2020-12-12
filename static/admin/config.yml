@@ -32,4 +32,5 @@ collections:
             - { name: visual, label: Visual, widget: image }
             - { name: alt_text, label: Alternative Text, widget: string }
             - { name: link, label: Link, widget: string }
+            - { name: flex, label: Proportion, widget: number, value_type: int, min: 1, max: 10  }
         
