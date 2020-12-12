@@ -36,18 +36,18 @@
       "flex": 3
     },
     {
-      "title": "Arena VIP Tour",
-      "visual": "/assets/arena-vip-tour.jpg",
-      "link": "https://allianz-arena.com/de/touren-und-fc-bayern-museum/arena-touren/vip-tour",
-      "alt_text": "Erleben Sie die Atmosphäre der Allianz Arena exklusiv aus der Sicht der Mannschaft oder eines VIP-Gastes!",
-      "flex": 1
-    },
-    {
       "title": "Trip Planning From Sofa",
       "visual": "/assets/trip-planning-from-sofa.jpg",
       "link": "https://community-events.arcteryx.com/tripplanningwithwalterzoerer",
       "alt_text": "Mach das Beste aus deiner Zeit zu Hause und bereite deinen nächsten Trip vor.",
       "flex": 2
+    },
+    {
+      "title": "Arena VIP Tour",
+      "visual": "/assets/arena-vip-tour.jpg",
+      "link": "https://allianz-arena.com/de/touren-und-fc-bayern-museum/arena-touren/vip-tour",
+      "alt_text": "Erleben Sie die Atmosphäre der Allianz Arena exklusiv aus der Sicht der Mannschaft oder eines VIP-Gastes!",
+      "flex": 1
     },
     {
       "title": "BMW M Race Track Compact Drive",
