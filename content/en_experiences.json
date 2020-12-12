@@ -47,28 +47,28 @@
       "visual": "/assets/arena-vip-tour.jpg",
       "link": "https://allianz-arena.com/de/touren-und-fc-bayern-museum/arena-touren/vip-tour",
       "alt_text": "Erleben Sie die Atmosphäre der Allianz Arena exklusiv aus der Sicht der Mannschaft oder eines VIP-Gastes!",
-      "flex": 1
+      "flex": 2
     },
     {
       "title": "Your Perfect Skiday",
       "visual": "/assets/your-perfect-skiday.jpg",
       "link": "http://www.salomonstation.at/perfect-skiday/",
       "alt_text": "Ob mit Technikübungen für Anfänger oder schon echten Carving- und Freerideschwüngen für Fortgeschrittene, macht der ehemalige Weltcupsieger Berni Gstrein Ihren Skitag in Sölden zu einem sicherlich unvergesslichen Erlebnis!",
-      "flex": 3
+      "flex": 2
     },
     {
       "title": "BMW M Race Track Compact Drive",
       "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
       "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
       "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
-      "flex": 5
+      "flex": 2
     },
     {
       "title": "BMW M Race Track Compact Drive",
       "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
       "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
       "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
-      "flex": 3
+      "flex": 2
     }
   ]
 }
