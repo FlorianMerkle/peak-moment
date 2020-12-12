@@ -1,17 +1,17 @@
 {
   "experience": [
     {
-      "title": "Dinner For You",
-      "visual": "/assets/dinner-for-you.jpg",
-      "link": "https://www.kitchennerds.de/privatkoch/ulrich-beier/322/gerichte/9a4a02a3-822c-48a3-af83-5d00b6f4730d/1/",
-      "alt_text": "Rent-a-Cook. Holen Sie sich für Ihren ganz besonderen Abend den Koch einfach zu Ihnen nach Hause.",
-      "flex": 2
-    },
-    {
       "title": "Swarovski Erlebnis Kristall Paket",
       "visual": "/assets/swarovski-erlebnis-kristall-paket.jpg",
       "link": "https://kristallwelten.swarovski.com/Content.Node/wattens/Erlebnis_Kristall_Pakete.html",
       "alt_text": "Tauchen Sie ein, in die einzigartige Welt von Swarovski. ",
+      "flex": 2
+    },
+    {
+      "title": "Dinner For You",
+      "visual": "/assets/dinner-for-you.jpg",
+      "link": "https://www.kitchennerds.de/privatkoch/ulrich-beier/322/gerichte/9a4a02a3-822c-48a3-af83-5d00b6f4730d/1/",
+      "alt_text": "Rent-a-Cook. Holen Sie sich für Ihren ganz besonderen Abend den Koch einfach zu Ihnen nach Hause.",
       "flex": 2
     },
     {
