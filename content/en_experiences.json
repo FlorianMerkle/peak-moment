@@ -57,17 +57,17 @@
       "flex": 2
     },
     {
-      "title": "5K Reboosted ClassicRUN",
-      "visual": "/assets/5k-rebosted-classicrun.jpg",
-      "link": "https://www.adidas.de/adidasrunners/community/frankfurt/event/5k-reboosted-classicrun-4?cm_sp=RUNNING_HUB-_-FRANKFURT-_-5K-REBOOSTED-CLASSICRUN-4",
-      "alt_text": "Wir wollen die Routine unseres Classicruns beibehalten und euch noch dazu für die \"5k Districtchallenge Reboosted motivieren.",
-      "flex": 2
-    },
-    {
       "title": "BMW M Race Track Compact Drive",
       "visual": "/assets/bmw-m-race-track-compact-drive.jpg",
       "link": "https://www.bmw-drivingexperience.com/de/trainings/bmw-driving-experience/bmw-m-race-track-experience/bmw-m-race-track-compact-drive.html",
       "alt_text": "Nutzen Sie die perfekte Chance, um mit unterschiedlichen BMW M Modellen auf der Rennstrecke Motorsport-Feeling zu genießen.",
+      "flex": 2
+    },
+    {
+      "title": "5K Reboosted ClassicRUN",
+      "visual": "/assets/5k-rebosted-classicrun.jpg",
+      "link": "https://www.adidas.de/adidasrunners/community/frankfurt/event/5k-reboosted-classicrun-4?cm_sp=RUNNING_HUB-_-FRANKFURT-_-5K-REBOOSTED-CLASSICRUN-4",
+      "alt_text": "Wir wollen die Routine unseres Classicruns beibehalten und euch noch dazu für die \"5k Districtchallenge Reboosted motivieren.",
       "flex": 2
     }
   ]
