@@ -4,7 +4,7 @@ import generalSettings from "../../content/general_settings.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
-  faInstagramSquare,
+  faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -80,21 +80,27 @@ const Header = () => {
               justifyContent: "flex-end",
             }}
           >
+          <a href={generalSettings.fb_link}>
             <FontAwesomeIcon
               icon={faFacebookSquare}
               color={"white"}
               style={{ height: "50px", width: "50px", padding: "0px 10px" }}
             />
+            </a>
+            <a href={generalSettings.insta_link}>
             <FontAwesomeIcon
-              icon={faInstagramSquare}
+              icon={faInstagram}
               color={"white"}
               style={{ height: "50px", width: "50px", padding: "0px 10px" }}
             />
+            </a>
+            <a href={generalSettings.linkedin_link}>
             <FontAwesomeIcon
               icon={faLinkedinIn}
               color={"white"}
               style={{ height: "50px", width: "50px", padding: "0px 10px" }}
             />
+            </a>
           </div>
         </div>
         <div
