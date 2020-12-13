@@ -1,4 +1,7 @@
 import * as React from "react";
+import ReactMarkdown from 'react-markdown'
+
+
 import Layout from "../components/Layout";
 import Newsletter from "../components/Newsletter"
 import ContactForm from "../components/ContactForm"
@@ -23,7 +26,7 @@ const AboutPage = () => {
     </div>
     <div style={{flex:2, padding:'50px'}}>
     <div style={{borderLeftStyle:'solid', borderWidth:'thin', paddingLeft:'50px', marginBottom:'50px'}}>
-    <p>{aboutData.aboutText}</p>
+    <ReactMarkdown>{aboutData.aboutText}</ReactMarkdown>
     </div>
 
     <div style={{}}>
