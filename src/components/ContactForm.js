@@ -13,20 +13,20 @@ const Newsletter = () => {
         <input type="hidden" name="form-name" value="contact" />
         <div style={{ display: "flex", padding: "10px 0px" }}>
           <label style={{ flex: 1 }}>Name</label>
-          <input type="text" name="name" id="name" />
+          <input style={{ flex: 2 }} type="text" name="name" id="name" />
         </div>
         <div style={{ display: "flex", padding: "10px 0px" }}>
           <label style={{ flex: 1 }}>Email</label>
-          <input type="email" name="email" id="email" />
+          <input style={{ flex: 2 }} type="email" name="email" id="email" />
         </div>
         <div style={{ display: "flex", padding: "10px 0px" }}>
           <label style={{ flex: 1 }}>Firma</label>
-          <input type="text" name="subject" id="subject" />
+          <input style={{ flex: 2 }} type="text" name="subject" id="subject" />
         </div>
         <div style={{ display: "flex", padding: "10px 0px" }}>
           <label style={{ flex: 1 }}>Nachricht</label>
           <textarea
-            style={{ resize: "none" }}
+            style={{ flex:2, resize: "none" }}
             name="message"
             id="message"
             rows="10"
