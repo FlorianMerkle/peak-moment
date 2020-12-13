@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import experiences from "../../content/en_experiences.json";
+import experiences from "../../content/de_experiences.json";
 
 import Tile from "../components/Tile";
 import Layout from "../components/Layout"
