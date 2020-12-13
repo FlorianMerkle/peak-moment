@@ -21,7 +21,7 @@ const Header = () => {
         flexDirection: "row",
       }}
     >
-      <div style={{ flex: 2, paddingLeft: "50px" }}>
+      <div style={{ flex: 1, paddingLeft: "50px" }}>
         <Link to="/">
           <img
             src={logo}
@@ -48,23 +48,34 @@ const Header = () => {
             display: "flex",
           }}
         >
-          <div style={{ flex: 1, textAlign: "end" }}>
+          <div style={{ flex: 2, display:'flex', justifyContent:'flex-end', alignItems:'flex-end' }}>
             <Link
               to="/about"
               style={{
+                paddingLeft:'20px',
                 textDecoration: "none",
                 color: "white",
-                fontSize: "50px",
+                fontSize: "30px",
               }}
             >
               About
+            </Link>
+            <Link
+              to="/about"
+              style={{
+                paddingLeft:'20px',
+                textDecoration: "none",
+                color: "white",
+                fontSize: "30px",
+              }}
+            >
+              Blog
             </Link>
           </div>
           <div
             style={{
               flex: 1,
               height: "50px",
-              width: "50px",
               display: "flex",
               justifyContent: "flex-end",
             }}
