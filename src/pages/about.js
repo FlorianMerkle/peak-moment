@@ -1,27 +1,15 @@
 import * as React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer"
+import Layout from "../components/Layout";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  backgroundColor: "black",
-  padding: "0",
-  margin: "0",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
 
-// markup
+
 
 const AboutPage = () => {
-
+  const [size, setSize] = useState([0])
   return (
-    <main style={pageStyles}>
-      <title>PEAK Moment</title>
-      <Header />
-      <div></div>
-      <Footer />
-    </main>
+    <Layout>
+
+    </Layout>
   );
 };
 
