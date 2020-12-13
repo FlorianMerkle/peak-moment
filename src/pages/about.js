@@ -12,7 +12,10 @@ const AboutPage = () => {
     <Layout>
     <div style={{display:'flex', backgroundColor:'white'}}>
     <div style={{flex:2}}>
-      linke Seite
+      <div stlye={{display:'flex', flexDirection:'column'}}>
+        <a>PEAK MOMENT</a>
+        <a>ÜBER UNS</a>
+      </div>
       <ContactForm/>
     </div>
     <div style={{flex:5}}>

@@ -1,34 +1,54 @@
 import React from "react";
 const Newsletter = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "black", padding: "30px", color: "white" }}>
       <form
         method="post"
         netlify-honeypot="bot-field"
         data-netlify="true"
         name="contact"
+        style={{ display: "flex", flexDirection: "column" }}
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        ...
-        <label>
-          Name
+        <div style={{ display: "flex", padding: "10px 0px" }}>
+          <label style={{ flex: 1 }}>Name</label>
           <input type="text" name="name" id="name" />
-        </label>
-        <label>
-          Email
+        </div>
+        <div style={{ display: "flex", padding: "10px 0px" }}>
+          <label style={{ flex: 1 }}>Email</label>
           <input type="email" name="email" id="email" />
-        </label>
-        <label>
-          Subject
+        </div>
+        <div style={{ display: "flex", padding: "10px 0px" }}>
+          <label style={{ flex: 1 }}>Firma</label>
           <input type="text" name="subject" id="subject" />
-        </label>
-        <label>
-          Message
-          <textarea name="message" id="message" rows="5" />
-        </label>
-        <button type="submit">Send</button>
-        <input type="reset" value="Clear" />
+        </div>
+        <div style={{ display: "flex", padding: "10px 0px" }}>
+          <label style={{ flex: 1 }}>Nachricht</label>
+          <textarea
+            style={{ resize: "none" }}
+            name="message"
+            id="message"
+            rows="10"
+          />
+        </div>
+        <div style={{ display: "flex", padding: "10px 0px" }}>
+          <button
+            style={{
+              flex: 1,
+              backgroundColor: "red",
+              color: "white",
+              border: "none",
+              cursor: "pointer",
+              fontWeight: "bold",
+              padding: "10px 0px",
+              margin: "5px 0px",
+            }}
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
       </form>
     </div>
   );
