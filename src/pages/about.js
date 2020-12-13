@@ -1,11 +1,12 @@
 import * as React from "react";
 import Layout from "../components/Layout";
+import Newsletter from "../components/Newsletter"
 
 
 
 
 const AboutPage = () => {
-  const [size, setSize] = useState([0])
+  
   return (
     <Layout>
 

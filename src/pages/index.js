@@ -5,16 +5,6 @@ import experiences from "../../content/en_experiences.json";
 import Tile from "../components/Tile";
 import Layout from "../components/Layout"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  backgroundColor: "black",
-  padding: "0",
-  margin: "0",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  display:'flex',
-  justifyContent:'center'
-};
 
 // markup
 
