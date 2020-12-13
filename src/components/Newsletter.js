@@ -33,8 +33,6 @@ class Newsletter extends React.Component {
           backgroundColor: "black",
           color: "white",
           padding: "25px",
-          margin: "25px",
-          width: "80%",
         }}
       >
         <div style={{display:'flex'}}>
