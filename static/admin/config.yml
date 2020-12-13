@@ -26,7 +26,7 @@ collections:
         fields:
         - { name: title, label: Title}
         - { name: visual, label: Visual, widget: image }
-        - { name: aboutText, label: About Text, widget: text }
+        - { name: aboutText, label: About Text, widget: markdown }
   - name: Experiences
     label: Experiences
     files:

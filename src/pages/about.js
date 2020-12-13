@@ -3,10 +3,13 @@ import Layout from "../components/Layout";
 import Newsletter from "../components/Newsletter"
 import ContactForm from "../components/ContactForm"
 
+import aboutData from "../../content/de_about.json"
+
 
 
 
 const AboutPage = () => {
+  console.log(aboutData.aboutText)
   
   return (
     <Layout>
@@ -20,10 +23,7 @@ const AboutPage = () => {
     </div>
     <div style={{flex:2, padding:'50px'}}>
     <div style={{borderLeftStyle:'solid', borderWidth:'thin', paddingLeft:'50px', marginBottom:'50px'}}>
-    <p>Ja, ich will den Newsletter mit Informationen zur Experience Economy und dem Angebot von Peak Moment abonnieren Hinweise zur von der Einwilligung umfassten Erfolgsmessung, dem Protokollieren ihrer Anmeldung, dem Einsatz des Versanddienstleisters Mailchimp sowie zu ihren Widerrufsrechten finden Sie in der Datenschutzerklärung</p>
-    <p>Ja, ich will den Newsletter mit Informationen zur Experience Economy und dem Angebot von Peak Moment abonnieren Hinweise zur von der Einwilligung umfassten Erfolgsmessung, dem Protokollieren ihrer Anmeldung, dem Einsatz des Versanddienstleisters Mailchimp sowie zu ihren Widerrufsrechten finden Sie in der Datenschutzerklärung</p>
-    <p>Ja, ich will den Newsletter mit Informationen zur Experience Economy und dem Angebot von Peak Moment abonnieren Hinweise zur von der Einwilligung umfassten Erfolgsmessung, dem Protokollieren ihrer Anmeldung, dem Einsatz des Versanddienstleisters Mailchimp sowie zu ihren Widerrufsrechten finden Sie in der Datenschutzerklärung</p>
-    <p>Ja, ich will den Newsletter mit Informationen zur Experience Economy und dem Angebot von Peak Moment abonnieren Hinweise zur von der Einwilligung umfassten Erfolgsmessung, dem Protokollieren ihrer Anmeldung, dem Einsatz des Versanddienstleisters Mailchimp sowie zu ihren Widerrufsrechten finden Sie in der Datenschutzerklärung</p>
+    <p>{aboutData.aboutText}</p>
     </div>
 
     <div style={{}}>
