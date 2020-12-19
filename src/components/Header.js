@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
-  const { title, logo } = generalSettings;
+  const { title, invertedLogo } = generalSettings;
   return (
     <div
       style={{
@@ -24,7 +24,7 @@ const Header = () => {
       <div style={{ flex: 1, paddingLeft: "50px" }}>
         <Link to="/">
           <img
-            src={logo}
+            src={invertedLogo}
             alt={title}
             style={{
               flex: "2",

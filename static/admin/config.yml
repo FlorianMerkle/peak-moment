@@ -6,22 +6,25 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
+    file: content/blog.json
+    fields:
+      - {label: Title, name: title, widget: hidden}
+      - {label: Description, name: description, widget: string, required: false}
+      - label: News
+        name: news
+        widget: list
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: datetime }
+          - { name: title, label: Title }
+          - { name: preview, label: Preview, widget: markdown }
+          - { name: body, label: Body, widget: markdown }
     files: 
       - name: blog
         label: Blog
-        file: content/blog.json
+        
         fields:
-          - {label: Title, name: title, widget: hidden}
-          - {label: Description, name: description, widget: string, required: false}
-          - label: News
-            name: news
-            widget: list
-            fields:
-              - { name: path, label: Path }
-              - { name: date, label: Date, widget: datetime }
-              - { name: title, label: Title }
-              - { name: preview, label: Preview, widget: markdown }
-              - { name: body, label: Body, widget: markdown }
+          
   
   - name: settings
     label: Settings
