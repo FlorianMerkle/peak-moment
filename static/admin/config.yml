@@ -19,12 +19,7 @@ collections:
           - { name: title, label: Title }
           - { name: preview, label: Preview, widget: markdown }
           - { name: body, label: Body, widget: markdown }
-    files: 
-      - name: blog
-        label: Blog
-        
-        fields:
-          
+    
   
   - name: settings
     label: Settings
