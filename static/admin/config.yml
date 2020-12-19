@@ -38,9 +38,10 @@ collections:
             widget: list
             fields:
               - { name: path, label: Path }
+              - { name: visual, label: Visual, widget: image }
               - { name: date, label: Date, widget: datetime }
               - { name: title, label: Title }
-              - { name: preview, label: Preview, widget: markdown }
+              - { name: intro, label: Introduction, widget: markdown }
               - { name: body, label: Body, widget: markdown }
   - name: settings
     label: Settings
