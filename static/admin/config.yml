@@ -4,23 +4,44 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - name: blog
-    label: Blog
-    file: content/blog.json
-    fields:
-      - {label: Title, name: title, widget: hidden}
-      - {label: Description, name: description, widget: string, required: false}
-      - label: News
-        name: news
-        widget: list
+  - label: Pages
+    name: pages
+    files:
+      - name: about
+        label: About
+        file: content/de_about.json
         fields:
-          - { name: path, label: Path }
-          - { name: date, label: Date, widget: datetime }
-          - { name: title, label: Title }
-          - { name: preview, label: Preview, widget: markdown }
-          - { name: body, label: Body, widget: markdown }
-    
-  
+        - { name: title, label: Title}
+        - { name: visual, label: Visual, widget: image }
+        - { name: aboutText, label: About Text, widget: markdown }
+      - name: Experiences
+        label: Experiences
+        file: content/de_experiences.json
+        fields:
+          - label: Experience
+            name: experience
+            widget: list
+            fields:
+            - { name: title, label: Title }
+            - { name: visual, label: Visual, widget: image }
+            - { name: alt_text, label: Alternative Text, widget: string }
+            - { name: link, label: Link, widget: string }
+            - { name: flex, label: Proportion, widget: number, value_type: int, min: 1, max: 10 }
+      - label: Blog
+        name: blog
+        file: content/blog.json
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: intro, widget: markdown}
+          - label: Blog
+            name: blog
+            widget: list
+            fields:
+              - { name: path, label: Path }
+              - { name: date, label: Date, widget: datetime }
+              - { name: title, label: Title }
+              - { name: preview, label: Preview, widget: markdown }
+              - { name: body, label: Body, widget: markdown }
   - name: settings
     label: Settings
     files:
@@ -38,27 +59,9 @@ collections:
   - name: about
     label: About
     files:
-      - name: about
-        label: About
-        file: content/de_about.json
-        fields:
-        - { name: title, label: Title}
-        - { name: visual, label: Visual, widget: image }
-        - { name: aboutText, label: About Text, widget: markdown }
+      
   - name: Experiences
     label: Experiences
     files:
-      - name: Experiences
-        label: Experiences
-        file: content/de_experiences.json
-        fields:
-          - label: Experience
-            name: experience
-            widget: list
-            fields:
-            - { name: title, label: Title }
-            - { name: visual, label: Visual, widget: image }
-            - { name: alt_text, label: Alternative Text, widget: string }
-            - { name: link, label: Link, widget: string }
-            - { name: flex, label: Proportion, widget: number, value_type: int, min: 1, max: 10  }
+      
         
