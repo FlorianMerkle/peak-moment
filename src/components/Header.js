@@ -61,7 +61,7 @@ const Header = () => {
               About
             </Link>
             <Link
-              to="/about"
+              to="/blog"
               style={{
                 paddingLeft:'20px',
                 textDecoration: "none",

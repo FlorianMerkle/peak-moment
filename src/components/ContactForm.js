@@ -1,7 +1,10 @@
 import React from "react";
 const Newsletter = () => {
   return (
+    <div>
+    <div style={{ backgroundColor: "white", height:'50px', borderStyle: 'solid', display:'flex', justifyContent:'center', alignItems:'center', fontSize:'20px', fontWeight:'bold', borderWidth:'3px'}}> <span>Get in Touch</span></div>
     <div style={{ backgroundColor: "black", padding: "30px", color: "white" }}>
+    
       <form
         method="post"
         netlify-honeypot="bot-field"
@@ -50,6 +53,7 @@ const Newsletter = () => {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };

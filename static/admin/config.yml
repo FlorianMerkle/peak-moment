@@ -4,6 +4,17 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    format: json
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: preview, label: Preview, widget: markdown }
+      - { name: body, label: Body, widget: markdown }
   - name: settings
     label: Settings
     files:
@@ -13,6 +24,7 @@ collections:
         fields:
         - { name: title, label: Title}
         - { name: logo, label: Logo, widget: image }
+        - { name: logoInverted, label: Logo Inverted, widget: image }
         - { name: insta_link, label: Instagram Link, widget: string }
         - { name: fb_link, label: Facebook Link, widget: string }
         - { name: linkedin_link, label: LinkedIn Link, widget: string }

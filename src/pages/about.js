@@ -12,15 +12,14 @@ import aboutData from "../../content/de_about.json"
 
 
 const AboutPage = () => {
-  console.log(aboutData.aboutText)
   
   return (
     <Layout>
     <div style={{display:'flex', backgroundColor:'white'}}>
     <div style={{flex:1, padding:'50px 20px', display:'flex', flexDirection:'column'}}>
       <div style={{flex:2, display:'flex', flexDirection:'column', alignItems:'flex-end', padding:'20px',fontSize:40, justifyContent:'center'}}>
-        <a style={{fontWeight:'bold'}}>PEAK MOMENT</a>
-        <a>ÜBER UNS</a>
+        <div style={{fontWeight:'bold'}}>PEAK MOMENT</div>
+        <div>ÜBER UNS</div>
       </div>
       <ContactForm/>
     </div>
