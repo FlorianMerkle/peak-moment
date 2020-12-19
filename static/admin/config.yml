@@ -9,7 +9,7 @@ collections:
     files: 
       - name: blog
         label: Blog
-        files: content/blog.json
+        file: content/blog.json
         fields:
           - {label: Title, name: title, widget: hidden}
           - {label: Description, name: description, widget: string, required: false}
