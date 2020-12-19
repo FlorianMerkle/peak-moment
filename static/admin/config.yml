@@ -56,12 +56,4 @@ collections:
         - { name: fb_link, label: Facebook Link, widget: string }
         - { name: linkedin_link, label: LinkedIn Link, widget: string }
         - { name: contact_mail, label: Contact Mail, widget: string }
-  - name: about
-    label: About
-    files:
-      
-  - name: Experiences
-    label: Experiences
-    files:
-      
-        
+  
