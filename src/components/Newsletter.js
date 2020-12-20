@@ -30,6 +30,8 @@ class Newsletter extends React.Component {
     return (
       <div
         style={{
+          boxShadow: "3px 5px 3px #9E9E9E80",
+          borderRadius:'10px',
           backgroundColor: "black",
           color: "white",
           padding: "25px",

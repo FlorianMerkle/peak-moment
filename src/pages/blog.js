@@ -5,10 +5,12 @@ import Newsletter from "../components/Newsletter";
 
 import aboutData from "../../content/de_about.json";
 import generalData from "../../content/general_settings.json";
+import blogData from "../../content/blog.json"
 import BlogCard from "../components/BlogCard";
 
-const AboutPage = () => {
-  console.log(generalData);
+
+const BlogPage = () => {
+  let blog = blogData.blog
   return (
     <Layout>
       <div style={{ display: "flex", backgroundColor: "white", padding: '50px' }}>
@@ -43,11 +45,14 @@ const AboutPage = () => {
               marginBottom: "50px",
             }}
           >
-            <BlogCard style={{padding:'25px 0px'}}/>
-            <BlogCard style={{padding:'25px 0px'}}/>
+          {blog.map(item=> (
+            <BlogCard data={item} />
+          ))}
+            
             <Newsletter />
-            <BlogCard style={{padding:'25px 0px'}}/>
-            <BlogCard style={{padding:'25px 0px'}}/>
+            {blog.map(item=> (
+            <BlogCard data={item} />
+          ))}
 
           </div>
         </div>
@@ -59,4 +64,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default BlogPage;

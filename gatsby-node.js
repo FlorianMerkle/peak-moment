@@ -6,7 +6,7 @@ exports.createPages =  ({ actions: { createPage } }) => {
     const blogs = blog_data.blog
     blogs.forEach( item => {
         createPage({
-            path: item.path,
+            path: 'blog/'+item.path,
             component: require.resolve("./src/components/Blog.js"),
             context: {item}
         })
