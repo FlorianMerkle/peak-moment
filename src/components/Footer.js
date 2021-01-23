@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Link} from 'gatsby'
 
-const Header = () =>{
+const Footer = () =>{
 return(
     <div
         style={{
@@ -31,4 +31,4 @@ const linkStyle={
     fontSize: "20px",
     paddingRight:'20px'
 }
-export default Header
+export default Footer

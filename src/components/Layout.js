@@ -17,7 +17,6 @@ const pageStyles = {
   };
 
 const Layout = props => {
-  console.log(props)
   const handleResize = () => {
     if (
       document.documentElement.clientWidth > 699 &&
