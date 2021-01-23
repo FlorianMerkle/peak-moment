@@ -16,7 +16,11 @@ const pageStyles = {
     padding: "0",
     margin: "0",
     fontFamily: "-apple-system, Roboto, sans-serif, serif",
-    minHeight:'100vh'
+    minHeight:'100vh',
+    display:'flex',
+    flexDirection:'column',
+    alignItems:'center'
+    
     //display:'flex',
     //justifyContent:'center'
   };
@@ -50,22 +54,24 @@ const LandingPage = (props) => {
     <div style={pageStyles}>
       {props.store.device === "desktop" && <Desktop />}
       {props.store.device !== "desktop" && <Mobile />}
+      <div style={{width:'100%', maxWidth:'1600px'}}>
       <Footer/>
+      </div>
     </div>
   );
 };
 
 const Desktop = () => {
   return (
-    <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-      <div style={{position:'relative', marginBottom:'-4px'}}>
+    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',maxWidth:'1600px'}}>
+      <div style={{position:'relative', marginBottom:'-4px', maxWidth:'1600px'}}>
         <img
           src={landingData.visual}
           alt={landingData.title}
           style={{
-            //height: "100%",
+            maxHeight: "50vh",
             width: "100%",
-            objectFit: "scale-down",
+            objectFit: "cover",
           }}
         />
         <div style={{position:'absolute', top:'20%', left:'10%', width:'30%'}}>

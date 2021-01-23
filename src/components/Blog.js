@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown'
 
 const Blog = props => {
   const { item } = props.pageContext
-  console.log(item.body)
+  //console.log(item.body)
   return (
     <Layout>
     <div style={{display:'flex', justifyContent:'center', backgroundColor:'white', minHeight:'70vh'}}>
