@@ -51,8 +51,8 @@ class Newsletter extends React.Component {
             onClick={this.handleGeneralAudienceSubscription}
             style={{
               flex: 1,
-              backgroundColor: "red",
-              color: "white",
+              backgroundColor: "#F9C8B7",
+              color: "black",
               border: "none",
               cursor: "pointer",
               fontWeight: "bold",

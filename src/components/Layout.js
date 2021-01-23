@@ -1,7 +1,8 @@
-import * as React from "react";
-
+import React, { useState, useEffect } from 'react';
+import { inject, observer } from "mobx-react"
 import Header from "./Header";
 import Footer from "./Footer";
+
 
 
 // styles
@@ -15,7 +16,34 @@ const pageStyles = {
     justifyContent:'center'
   };
 
-const Layout = (props) => {
+const Layout = props => {
+  console.log(props)
+  const handleResize = () => {
+    if (
+      document.documentElement.clientWidth > 699 &&
+      props.store.device !== "desktop"
+    ) {
+      props.store.setDevice('desktop')
+    }
+    if (
+      document.documentElement.clientWidth < 900 &&
+      props.store.device !== "mobile"
+    ) {
+      props.store.setDevice('mobile')
+    }
+    console.log(props.store.device)
+  }
+
+  useEffect(() => {
+    handleResize()
+    if (typeof window !=='undefined') window.addEventListener("resize", handleResize)
+
+    // cleanup this component
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
     return (
         <main style={pageStyles}>
       <title>PEAK Moment</title>
@@ -28,4 +56,4 @@ const Layout = (props) => {
     )
 }
 
-export default Layout
+export default inject("store")(observer(Layout))
