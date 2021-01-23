@@ -30,7 +30,6 @@ const Layout = props => {
     ) {
       props.store.setDevice('mobile')
     }
-    console.log(props.store.device)
   }
 
   useEffect(() => {

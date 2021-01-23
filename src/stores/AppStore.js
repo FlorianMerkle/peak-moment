@@ -18,6 +18,5 @@ decorate(StoreModel, {
   language: observable,
   switchLanguage: action,
 })
-console.log('1')
 const AppStore = new StoreModel()
 export default AppStore
