@@ -63,7 +63,7 @@ const LandingPage = (props) => {
 
 const Desktop = () => {
   return (
-    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',maxWidth:'1600px'}}>
+    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',maxWidth:'1600px', }}>
       <div style={{position:'relative', marginBottom:'-4px', maxWidth:'1600px'}}>
         <img
           src={landingData.visual}
@@ -80,7 +80,7 @@ const Desktop = () => {
         </div>
       </div>
       <div style={{backgroundColor:'white', maxWidth:'1600px'}}>
-      <div style={{display:'flex', justifyContent:'space-between'}}>
+      <div style={{display:'flex', justifyContent:'space-between', margin:'0px 100px'}}>
       <div style={{flex:3, padding:'50px 50px 0px 50px'}}>
               <ReactMarkdown>{landingData.block1}</ReactMarkdown>
               <ReactMarkdown>{landingData.block2}</ReactMarkdown>
@@ -91,7 +91,7 @@ const Desktop = () => {
               </div>
           </div>
       </div>
-      <div style={{padding:'0px 50px 50px 50px'}}>
+      <div style={{padding:'0px 50px 50px 50px', margin:'0px 100px'}}>
         <ReactMarkdown>{landingData.block3}</ReactMarkdown>
         <ReactMarkdown>{landingData.block4}</ReactMarkdown>
         <div style={{display:'flex',alignItems:'center', flexDirection:'column'}}>
