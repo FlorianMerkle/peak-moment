@@ -27,13 +27,14 @@ class Newsletter extends React.Component {
   };
 
   render() {
+    let { theme } = this.props
     return (
       <div
         style={{
           boxShadow: "3px 5px 3px #9E9E9E80",
           borderRadius:'10px',
-          backgroundColor: "black",
-          color: "white",
+          backgroundColor: theme=='light'? '#ffe8e0':"black",
+          color: theme=='light'?'black':"#ffe8e0",
           padding: "25px",
         }}
       >

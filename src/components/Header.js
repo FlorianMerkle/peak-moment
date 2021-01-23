@@ -237,63 +237,33 @@ const BurgerMenuButton = props => {
       }}
       onClick={() => props.toggleMenu()}
     >
-      <div
-        style={
-          props.showMenu
-            ? {
-        width: "35px",
-        height: "5px",
-        borderRadius: "5px",
-        backgroundColor: 'gold',
-        margin: "6px 0",
-      }
-            : {
-        width: "35px",
-        height: "5px",
-        borderRadius: "5px",
-        backgroundColor: 'lightgrey',
-        margin: "6px 0",
-      }
-        }
-      ></div>
-      <div
-        style={
-          props.showMenu
-            ? {
-        width: "35px",
-        height: "5px",
-        borderRadius: "5px",
-        backgroundColor: 'gold',
-        margin: "6px 0",
-      }
-            : {
-        width: "35px",
-        height: "5px",
-        borderRadius: "5px",
-        backgroundColor: 'lightgrey',
-        margin: "6px 0",
-      }
-        }
-      ></div>
-      <div
-        style={
-          props.showMenu
-            ? {
-        width: "35px",
-        height: "5px",
-        borderRadius: "5px",
-        backgroundColor: 'gold',
-        margin: "6px 0",
-      }
-            : {
-        width: "35px",
-        height: "5px",
-        borderRadius: "5px",
-        backgroundColor: 'lightgrey',
-        margin: "6px 0",
-      }
-        }
-      ></div>
+      <BurgerPiece showMenu={props.showMenu}/>
+      <BurgerPiece showMenu={props.showMenu}/>
+      <BurgerPiece showMenu={props.showMenu}/>
+      
     </div>
   )
+}
+
+const BurgerPiece = props =>{
+  return(
+  <div
+        style={
+          props.showMenu
+            ? {
+        width: "35px",
+        height: "5px",
+        borderRadius: "5px",
+        backgroundColor: '#F9C8B7',
+        margin: "6px 0",
+      }
+            : {
+        width: "35px",
+        height: "5px",
+        borderRadius: "5px",
+        backgroundColor: '#ffe8e0',
+        margin: "6px 0",
+      }
+        }
+      ></div>)
 }

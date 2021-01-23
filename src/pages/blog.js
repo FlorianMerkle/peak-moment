@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { inject, observer } from "mobx-react";
+
 import Layout from "../components/Layout";
 import Newsletter from "../components/Newsletter";
 
@@ -8,11 +10,48 @@ import generalData from "../../content/general_settings.json";
 import blogData from "../../content/blog.json"
 import BlogCard from "../components/BlogCard";
 
+const BlogPage = props => {
+  return(
+    <Layout>
+      {props.store.device==='desktop' && <Desktop/>}
+      {props.store.device!=='desktop' && <Mobile/>}
+      </Layout>
+    )
+}
 
-const BlogPage = () => {
+const Mobile = () => {
   let blog = blogData.blog
   return (
-    <Layout>
+    <div
+          style={{
+            width: "100%",
+            minHeight: "99vh",
+            backgroundColor: "black",
+            color: "white",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent:'center',
+            alignItems:'center'
+          }}
+        >
+        {blog.map(item=> (
+            <BlogCard data={item} />
+          ))}
+            
+            <div style = {{width:'90vw'}}>
+            <Newsletter theme={'light'}/>
+            </div>
+            {blog.map(item=> (
+            <BlogCard data={item} />
+          ))}
+        </div>
+    )
+}
+
+const Desktop = () => {
+  let blog = blogData.blog
+  return (
+    <div>
       <div style={{ display: "flex", backgroundColor: "white", padding: '50px' }}>
         <div
           style={{
@@ -60,8 +99,8 @@ const BlogPage = () => {
       <div style={{padding:'50px', backgroundColor:'white'}}>
         
       </div>
-    </Layout>
+      </div>
   );
 };
 
-export default BlogPage;
+export default inject("store")(observer(BlogPage));
