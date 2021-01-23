@@ -9,7 +9,7 @@ import generalData from "../../content/general_settings.json";
 import aboutData from "../../content/de_about.json";
 
 
-const AboutPage = props => {
+const LandingPage = props => {
   return(
   <div>
     {props.store.device==='desktop' && <Desktop/>}
