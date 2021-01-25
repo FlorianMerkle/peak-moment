@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import { inject, observer } from "mobx-react";
 import generalSettings from "../../content/general_settings.json";
@@ -9,108 +9,25 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
-
-
 const Header = (props) => {
-  const [showMenu, setMenu] = useState(false)
-  const { title, logoInverted } = generalSettings;
+  const [showMenu, setMenu] = useState(false);
   if (props.store.device !== "desktop") {
     return (
-      <div
-        style={{
-          
-          backgroundColor: "black",
-          display: "flex",
-          flexDirection:'column'
-        }}
-      >
-      <div style={{display:'flex', height: "70px"}}>
-        <BurgerMenuButton
-          showMenu={showMenu}
-          toggleMenu={() => setMenu(!showMenu)}
-        />
-        <div style={{flex:1, display:'flex', justifyContent:'center'}}>
-        <Link to="/" style={{height:'100%', justifyContent:'center'}}>
-          <img
-            src={logoInverted}
-            alt={title}
-            style={{
-              flex: "2",
-              height: "100%",
-              maxWidth: "100%",
-              objectFit: "scale-down",
-            }}
-          />
-        </Link>
-        </div>
-        </div>
-        {showMenu&&<div style={{width:'100%', height:'20vh', backgroundColor:'darkgrey'}}>
-        <Link
-                to="/"
-                activeStyle={{paddingLeft:'30px',
-        backgroundColor: "#2B2E34", 
-        color: "lightgrey",
-        height: "33.333333333%",}}
-                style={{
-        textDecoration: "none",
-        display: "flex",
-        alignItems: "center",
-        paddingLeft:'30px',
-        paddingRight: 10,
-        color: "white",
-        height: "33.333333333%",
-        backgroundColor:'transparent', outline:'none', margin:0,  border:'none'
-      }}
-              >
-                Home
-              </Link>
-              <Link
-                to="/about"
-                activeStyle={{paddingLeft:'30px',
-        backgroundColor: "#2B2E34", 
-        color: "lightgrey",
-        height: "33.333333333%",}}
-                style={{
-        textDecoration: "none",
-        display: "flex",
-        alignItems: "center",
-        paddingLeft:'30px',
-        paddingRight: 10,
-        color: "white",
-        height: "33.333333333%",
-        backgroundColor:'transparent', outline:'none', margin:0,  border:'none'
-      }}
-              >
-                About
-              </Link>
-              
-              <Link
-                to="/blog"
-                activeStyle={{paddingLeft:'30px',
-        backgroundColor: "#2B2E34", 
-        color: "lightgrey",
-        height: "33.333333333%",}}
-                style={{
-        textDecoration: "none",
-        display: "flex",
-        alignItems: "center",
-        paddingLeft:'30px',
-        paddingRight: 10,
-        color: "white",
-        height: "33.333333333%",
-        backgroundColor:'transparent', outline:'none', margin:0,  border:'none'
-      }}
-              >
-                Blog
-              </Link>
-        
-        </div>}
-      </div>
+      <Mobile showMenu={showMenu} setMenu={setMenu}/>
     );
   }
   if (props.store.device === "desktop") {
     return (
-      <div
+      <Desktop/>
+    );
+  }
+};
+export default inject("store")(observer(Header));
+
+const Desktop = () => {
+  const { title, logoInverted } = generalSettings;
+  return(
+    <div
         style={{
           height: "200px",
           backgroundColor: "black",
@@ -220,12 +137,127 @@ const Header = (props) => {
           </div>
         </div>
       </div>
-    );
-  }
-};
-export default inject("store")(observer(Header));
+  )
+}
+const Mobile = props =>{
+  let {showMenu, setMenu} = props
+  const { title, logoInverted } = generalSettings;
+  return(
+    <div
+        style={{
+          backgroundColor: "black",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <div style={{ display: "flex", height: "70px" }}>
+          <BurgerMenuButton
+            showMenu={showMenu}
+            toggleMenu={() => setMenu(!showMenu)}
+          />
+          <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>
+            <Link to="/" style={{ height: "100%", justifyContent: "center" }}>
+              <img
+                src={logoInverted}
+                alt={title}
+                style={{
+                  flex: "2",
+                  height: "100%",
+                  maxWidth: "100%",
+                  objectFit: "scale-down",
+                }}
+              />
+            </Link>
+          </div>
+        </div>
+        {showMenu && (
+          <div
+            style={{
+              width: "100%",
+              height: "20vh",
+              backgroundColor: "#ffe8e0",
+            }}
+          >
+            <Link
+              to="/"
+              activeStyle={{
+                paddingLeft: "30px",
+                backgroundColor: "#F9C8B7",
+                color: "white",
+                height: "33.333333333%",
+              }}
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: "30px",
+                paddingRight: 10,
+                color: "darkgrey",
+                height: "33.333333333%",
+                backgroundColor: "transparent",
+                outline: "none",
+                margin: 0,
+                border: "none",
+              }}
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              activeStyle={{
+                paddingLeft: "30px",
+                backgroundColor: "#F9C8B7",
+                color: "white",
+                height: "33.333333333%",
+              }}
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: "30px",
+                paddingRight: 10,
+                color: "darkgrey",
+                height: "33.333333333%",
+                backgroundColor: "transparent",
+                outline: "none",
+                margin: 0,
+                border: "none",
+              }}
+            >
+              About
+            </Link>
 
-const BurgerMenuButton = props => {
+            <Link
+              to="/blog"
+              activeStyle={{
+                paddingLeft: "30px",
+                backgroundColor: "#F9C8B7",
+                color: "white",
+                height: "33.333333333%",
+              }}
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: "30px",
+                paddingRight: 10,
+                color: "darkgrey",
+                height: "33.333333333%",
+                backgroundColor: "transparent",
+                outline: "none",
+                margin: 0,
+                border: "none",
+              }}
+            >
+              Blog
+            </Link>
+          </div>
+        )}
+      </div>
+  )
+}
+
+const BurgerMenuButton = (props) => {
   return (
     <div
       style={{
@@ -237,33 +269,33 @@ const BurgerMenuButton = props => {
       }}
       onClick={() => props.toggleMenu()}
     >
-      <BurgerPiece showMenu={props.showMenu}/>
-      <BurgerPiece showMenu={props.showMenu}/>
-      <BurgerPiece showMenu={props.showMenu}/>
-      
+      <BurgerPiece showMenu={props.showMenu} />
+      <BurgerPiece showMenu={props.showMenu} />
+      <BurgerPiece showMenu={props.showMenu} />
     </div>
-  )
-}
+  );
+};
 
-const BurgerPiece = props =>{
-  return(
-  <div
-        style={
-          props.showMenu
-            ? {
-        width: "35px",
-        height: "5px",
-        borderRadius: "5px",
-        backgroundColor: '#F9C8B7',
-        margin: "6px 0",
+const BurgerPiece = (props) => {
+  return (
+    <div
+      style={
+        props.showMenu
+          ? {
+              width: "35px",
+              height: "5px",
+              borderRadius: "5px",
+              backgroundColor: "#F9C8B7",
+              margin: "6px 0",
+            }
+          : {
+              width: "35px",
+              height: "5px",
+              borderRadius: "5px",
+              backgroundColor: "#ffe8e0",
+              margin: "6px 0",
+            }
       }
-            : {
-        width: "35px",
-        height: "5px",
-        borderRadius: "5px",
-        backgroundColor: '#ffe8e0',
-        margin: "6px 0",
-      }
-        }
-      ></div>)
-}
+    ></div>
+  );
+};
