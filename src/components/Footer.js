@@ -5,11 +5,11 @@ const Footer = () =>{
 return(
     <div
         style={{
-
+          
           height: "100px",
           backgroundColor: "black",
           color: "white",
-          padding:'50px',
+          padding:'30px',
           display:'flex',
           justifyContent:'flex-end',
           alignItems:'flex-start',
