@@ -1,9 +1,11 @@
 import * as React from "react";
 
 import { inject, observer } from "mobx-react";
+import ReactMarkdown from 'react-markdown'
 
 import Layout from "../components/Layout";
 import Newsletter from "../components/Newsletter";
+import ContactForm from "../components/ContactForm";
 
 import aboutData from "../../content/de_about.json";
 import generalData from "../../content/general_settings.json";
@@ -30,7 +32,7 @@ const Mobile = () => {
             color: "white",
             display: "flex",
             flexDirection: "column",
-            justifyContent:'center',
+            //justifyContent:'center',
             alignItems:'center'
           }}
         >
@@ -52,28 +54,40 @@ const Desktop = () => {
   let blog = blogData.blog
   return (
     <div>
-      <div style={{ display: "flex", backgroundColor: "white", padding: '50px' }}>
+      <div style={{ display: "flex", backgroundColor: "white", padding: '50px 50px 50px 0px', justifyContent:'space-between' }}>
         <div
           style={{
             flex: 1,
-            padding: "0px 0px",
+            margin: "20px 20px",
+            padding:'50px',
             display: "flex",
-            
+            flexDirection:'column',
             maxWidth: '600px',
-            justifyContent:'flex-start',
-            alignItems:'flex-start'
+            justifyContent:'space-between',
+            alignItems:'flex-start',
+            fontSize:18, lineHeight:1.4
           }}
         >
-          <img
-            src={generalData.logo}
-            alt={aboutData.title}
-            style={{
-              //height: "100%",
-              maxWidth: "100%",
-              objectFit: "scale-down",
-              paddingRight:'20px'
-            }}
-          />
+        <div style={{  
+          width:'100%',
+          display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+              //padding: "20px",
+              fontSize: 40,
+              justifyContent: "center",
+            }}>
+        <div style={{ fontWeight: "bold", fontSize: 40, }}>PEAK MOMENT</div>
+            <div style={{ fontSize: 40, }}>BLOG</div>
+          </div>
+          <div >
+        <ReactMarkdown>
+          {blogData.description}
+        </ReactMarkdown>
+        </div>
+        
+          
+          <ContactForm/>
         </div>
         <div style={{ flex: 2, padding: "0px" }}>
           <div

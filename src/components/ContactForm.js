@@ -1,9 +1,10 @@
 import React from "react";
-const Newsletter = () => {
+const ContactForm = () => {
   return (
-    <div style={{ boxShadow: "3px 5px 3px #9E9E9E80", borderRadius: "10px" }}>
+    <div style={{ boxShadow: "3px 5px 3px #9E9E9E80", borderRadius: "10px", width:'100%' }}>
       <div
         style={{
+          
           backgroundColor: "white",
           height: "50px",
           borderStyle: "solid",
@@ -81,4 +82,4 @@ const Newsletter = () => {
   );
 };
 
-export default Newsletter;
+export default ContactForm;

@@ -24,7 +24,7 @@ const Desktop = () => {
         <div
           style={{
             flex: 1,
-            padding: "50px 20px",
+            padding: "50px 50px",
             display: "flex",
             flexDirection: "column",
           }}
@@ -57,7 +57,7 @@ const Desktop = () => {
             />
           <ContactForm />
         </div>
-        <div style={{ flex: 2, padding: "50px" }}>
+        <div style={{ flex: 2, padding: "50px 50px 50px 0px" }}>
           <div
             style={{
               borderLeftStyle: "solid",

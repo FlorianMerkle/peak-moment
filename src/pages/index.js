@@ -4,6 +4,7 @@ import experiences from "../../content/de_experiences.json";
 
 import Tile from "../components/Tile";
 import Layout from "../components/Layout"
+import ReactMarkdown from "react-markdown";
 
 
 // markup
@@ -29,6 +30,11 @@ const Desktop = () => {
             flexDirection: "column",
           }}
         >
+        <div style={{width:'100%', display:'flex', flexDirection:'column',alignItems:'center', fontSize:'40px', textAlign:'center'}}>
+        
+          <ReactMarkdown>{experiences.claim}</ReactMarkdown>
+          <ReactMarkdown>{experiences.info}</ReactMarkdown>
+        </div>
           <div
             style={{ height: "33vh", flexDirection: "row", display: "flex" }}
           >

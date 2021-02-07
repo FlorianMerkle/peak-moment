@@ -7,9 +7,24 @@ collections:
   - label: Pages
     name: pages
     files:
-      - name: landing
-        label: Landing
-        file: content/de_landing.json
+      - name: landing_full_service
+        label: Landing - Full Service
+        file: content/de_landing_full_service.json
+        fields:
+        - { name: title, label: Title}
+        - { name: subTitle, label: Subtitle}
+        - { name: visual, label: Visual, widget: image }
+        - { name: block1, label: Text Block 1, widget: markdown }
+        - { name: block2, label: Text Block 2, widget: markdown }
+        - { name: block3, label: Text Block 3, widget: markdown }
+        - { name: block4, label: Text Block 4, widget: markdown }
+        - { name: valueTitle, label: Value Title, widget: markdown }
+        - { name: value1, label: Value 1, widget: markdown }
+        - { name: value2, label: Value 2, widget: markdown }
+        - { name: value3, label: Value 3, widget: markdown }
+      - name: landing_infrastructure
+        label: Landing - Infrastructure
+        file: content/de_landing_infractructure.json
         fields:
         - { name: title, label: Title}
         - { name: subTitle, label: Subtitle}

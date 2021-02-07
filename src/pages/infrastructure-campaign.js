@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Newsletter from "../components/Newsletter";
 import ContactForm from "../components/ContactForm";
 import generalData from "../../content/general_settings.json";
-import landingData from "../../content/de_landing.json";
+import landingData from "../../content/de_landing_infrastructure.json";
 
 const pageStyles = {
     color: "#232129",

@@ -40,10 +40,10 @@ const Desktop = props => {
     let { data } = props
     return (
       <div {...props} style={{padding:'25px 0px', display:'flex', }}>
-        <a  onClick={() => navigate(props.data.path)} target="_blank" style={{ cursor:'pointer', width:'90vw',height:'300px', backgroundColor:'#ffe8e0', display:'flex', flexDirection:'column', textDecoration:'none', color:'black', borderRadius:'10px', boxShadow: "3px 5px 3px #9E9E9E50"}}>
+        <a  onClick={() => navigate(props.data.path)} target="_blank" style={{ cursor:'pointer', width:'90vw', backgroundColor:'#ffe8e0', display:'flex', flexDirection:'column', textDecoration:'none', color:'black', borderRadius:'10px', boxShadow: "3px 5px 3px #9E9E9E50"}}>
         <div style={{
           backgroundColor:'lightgrey', 
-          height:'50%', 
+          height:'210px', 
           //width:'%', 
           //maxWidth:'90vw', 
           borderTopLeftRadius:'10px', 
