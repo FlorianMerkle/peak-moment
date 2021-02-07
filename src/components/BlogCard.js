@@ -25,9 +25,9 @@ const Desktop = props => {
         </div>
         <div style={{padding:'25px', display:'flex', flexDirection:'column'}}>
             <div style={{fontSize:35, fontWeight:'bold', flex:1}}>{data.title}</div>
-            <div style={{ flex: 3, fontSize:18, lineHeight:1.4}}>
+            <div style={{ flex: 3, fontSize:18, lineHeight:1.4, overflow:'hidden'}}>
             
-            <ReactMarkdown>{data.intro}</ReactMarkdown>
+            <ReactMarkdown>{data.preview}</ReactMarkdown>
             </div>
         </div>
           
@@ -54,9 +54,9 @@ const Desktop = props => {
         </div>
         <div style={{padding:'15px', display:'flex', flexDirection:'column'}}>
             <div style={{fontSize:20, fontWeight:'bold', flex:1}}>{data.title}</div>
-            <div style={{ flex: 3, fontSize:13, lineHeight:1.2}}>
+            <div style={{ flex: 3, fontSize:13, lineHeight:1.2, overflow:'hidden'}}>
             
-            <ReactMarkdown>{data.intro}</ReactMarkdown>
+            <ReactMarkdown>{data.preview}</ReactMarkdown>
             </div>
         </div>
           

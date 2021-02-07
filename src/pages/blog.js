@@ -34,14 +34,14 @@ const Mobile = () => {
             alignItems:'center'
           }}
         >
-        {blog.map(item=> (
+          {blog.slice(0,2).map(item=> (
             <BlogCard data={item} />
           ))}
             
             <div style = {{width:'90vw'}}>
             <Newsletter theme={'light'}/>
             </div>
-            {blog.map(item=> (
+            {blog.slice(2,3).map(item=> (
             <BlogCard data={item} />
           ))}
         </div>
@@ -84,12 +84,12 @@ const Desktop = () => {
               marginBottom: "50px",
             }}
           >
-          {blog.map(item=> (
+          {blog.slice(0,2).map(item=> (
             <BlogCard data={item} />
           ))}
             
             <Newsletter />
-            {blog.map(item=> (
+            {blog.slice(2,3).map(item=> (
             <BlogCard data={item} />
           ))}
 
