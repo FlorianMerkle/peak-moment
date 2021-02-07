@@ -17,7 +17,7 @@ const Blog = props => {
       <div style={{fontSize:'24px', textAlign:'justify'}}>
       <ReactMarkdown>{item.intro}</ReactMarkdown>
 
-      <img src={item.visual} alt={item.title} style={{height:'50px', width:'100%', objectFit:'cover'}}/>
+      <img src={item.visual} alt={item.title} style={{height:'250px', width:'100%', objectFit:'cover'}}/>
       <ReactMarkdown>{item.body}</ReactMarkdown>
       </div>
     </div>

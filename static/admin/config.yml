@@ -34,6 +34,8 @@ collections:
         label: Experiences
         file: content/de_experiences.json
         fields:
+          - {label: Information, name: info, widget: markdown}
+          - {label: Claim, name: claim, widget: markdown}
           - label: Experience
             name: experience
             widget: list
@@ -48,7 +50,7 @@ collections:
         file: content/blog.json
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Description, name: intro, widget: markdown}
+          - {label: Description, name: description, widget: markdown}
           - label: Blog
             name: blog
             widget: list
@@ -58,6 +60,7 @@ collections:
               - { name: date, label: Date, widget: datetime }
               - { name: title, label: Title }
               - { name: intro, label: Introduction, widget: markdown }
+              - { name: preview, label: Preview, widget: markdown }
               - { name: body, label: Body, widget: markdown }
   - name: settings
     label: Settings
